@@ -1,7 +1,7 @@
 public class Primes {
     public static void main(String[] args) {
-        int p = Integer.parseInt(args[0]);
         int mone = 0;
+        int p = Integer.parseInt(args[0]);
         for (int i = 2; i <= p; i++){
             Boolean isprime =true;
             for (int j = 2; j < i && isprime == true; j++){
