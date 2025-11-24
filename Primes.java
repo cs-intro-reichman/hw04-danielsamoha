@@ -14,7 +14,7 @@ public class Primes {
                 mone++;
             }
         }
-        int pre = (int)((double)mone / (double)(p - 1) * 100);
+        int pre = (int)((double)mone / (double)(p) * 100);
         System.out.println("There are " + mone + " primes between 2 and " + p + " (" + pre + "% are primes)");
     }
 }
