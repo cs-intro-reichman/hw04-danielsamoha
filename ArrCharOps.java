@@ -165,6 +165,8 @@ public class ArrCharOps {
      *         return -2 if there is an error with the input.
      */
     public static int compareTo(String str1, String str2) {
+        str1 = str1.toLowerCase();
+        str2 = str2.toLowerCase();
         if (str1.length() > str2.length()){
             for (int i = 0; i < str2.length(); i++){
                 if ((int)str1.charAt(i) > (int)str2.charAt(i)){
