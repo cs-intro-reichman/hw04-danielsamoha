@@ -125,8 +125,17 @@ public class ArrCharOps {
     public static long hashCode(char[] arr) {
         long hash = 0;
         for(int i = 0; i < arr.length; i++){
-            hash += arr[i] * 7 ^ (arr.length - (i + 1));
+            hash = hash * 7 + arr[i];
+            
+            
         }
+
+        //for(int i = 0; i < arr.length; i++){
+        //    for (int j = 0; j < arr.length - (i + 1); j++){
+        //        hash += arr[i] * 7;
+        //    }
+        //    
+        //}
         return hash;
     }
 
