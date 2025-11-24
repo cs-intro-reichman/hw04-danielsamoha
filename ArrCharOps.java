@@ -168,8 +168,6 @@ public class ArrCharOps {
         if (str1.length() == 0 && str2.length() == 0) {
             return 0;
         }
-        str1 = str1.toLowerCase();
-        str2 = str2.toLowerCase();
         int min = Math.min(str2.length(), str1.length());
         for (int i = 0; i < min; i++){
             if ((int)str1.charAt(i) > (int)str2.charAt(i)){
