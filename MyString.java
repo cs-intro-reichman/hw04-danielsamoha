@@ -34,7 +34,7 @@ public class MyString {
         }
         for (int i = 0; i <= str1.length() - str2.length(); i++){
             if (str1.charAt(i) == str2.charAt(0)){
-                Boolean q = true;
+                boolean q = true;
                 for (int j = 1; j < str2.length() && q == true; j++){
                     if (str1.charAt(i + j) != str2.charAt(j)){
                         q = false;
