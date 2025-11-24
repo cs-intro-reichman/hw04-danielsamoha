@@ -27,7 +27,7 @@ public class MyString {
         if (str2.length() == 0){
             return true;
         }
-        if(str2.length() > str1.length()){
+        if (str1.length() < str2.length()) {
             return false;
         }
         str1 = lowerCase(str1);
